@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana;
+    margin: 0;
+    padding: 0;
+  
+    box-sizing: border-box;
+    height:100vh;
+}
+
+div.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0efec;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+div.tools{
+    width: 300px;
+    background: #ffffff;
+}
+div.toolbarItem{
+     padding: 15px;
+}
+.toolbarLabel{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(46, 44, 43, 0.73);
+}
+.toolbarInput{
+    width: 100%;
+}
+.workstation{
+    flex-grow: 1 ;
+    padding: 20px;
+    background-color:#f2e1e1;
+
+
+}
+#canvas{
+    max-width: 100%;
+    max-height:100%;
+}
+input[type='button']{
+    background-color: #e5a31f;
+    border: none;
+    height: 30px;
+    color: whitesmoke;
+    outline: none;
+    border-radius: 5px;
+}
+input[type='button']:hover{
+    outline: none;
+    border: none;
+    box-shadow: inset 2px 3px 4px #4d4848, 3px 2px 3px #4d4848 ;
+}
+#file{
+    background-color: #e5a31f;
+    border-radius: 5px;
+
+}

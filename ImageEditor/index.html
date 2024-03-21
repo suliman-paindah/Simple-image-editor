@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tools">
+
+            <div class="toolbarItem">
+                <input class="toolbarInput" type="file" id="file">
+            </div>
+
+            <div class="toolbarItem">
+                <label class="toolbarLabel" for='brightness'>brightness</label>
+                <input class="toolbarInput" type="range" min="0" max="200" id="brightness">
+            </div>
+
+            <div class="toolbarItem">
+                <label class="toolbarLabel" for='saturation'>saturation</label>
+                <input class="toolbarInput" type="range" min="0" max="200" id="saturation">
+            </div>
+
+            <div class="toolbarItem">
+                <label class="toolbarLabel" for='blur'>blur</label>
+                <input class="toolbarInput" type="range" min="0" max="30" id="blur">
+            </div>
+
+            <div class="toolbarItem">
+                <label class="toolbarLabel" for='inversion'>inversion</label>
+                <input class="toolbarInput" type="range" min="0" max="100" id="inversion">
+            </div>
+
+            <div class="toolbarItem">
+
+                <input class="toolbarInput" type="button" value="Rest"  id="btn">
+            </div>
+
+            <div class="toolbarItem">
+                <input class="toolbarInput" type="button" value="Save"  id="saveBtn">
+            </div>
+
+        </div>
+        <div class="workstation">
+            <canvas id="canvas" width="500" height="500"></canvas>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
